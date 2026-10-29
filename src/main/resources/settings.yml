@@ -1,0 +1,20 @@
+# Alchemy Plugin Configuration
+Version: 1
+
+# Brewing settings
+Brewing:
+  # Minimum quality score required for a brew to succeed (0.0 - 1.0)
+  # A score below this threshold results in a failed brew
+  Minimum_Quality: 0.5
+
+# Element display names
+# Server administrators can rename elements here
+Elements:
+  Fire: Fire
+  Water: Water
+  Earth: Earth
+  Air: Air
+  Life: Life
+  Death: Death
+  Magic: Magic
+  Mundane: Mundane

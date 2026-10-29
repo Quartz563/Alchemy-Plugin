@@ -1,0 +1,141 @@
+recipes:
+  swiftness_potion:
+    name: "Potion of Swiftness"
+    standard_temp: WARM #something like this I think?
+    steps:
+      - type: INGREDIENT
+        item: SUGAR
+        state: NONE
+        amount: 2
+      - type: INGREDIENT
+        item: RABBIT_FOOT
+        state: NONE
+        temperature: HOT #by specifying a temp, we're indicating that it *must* deviate from default.
+        amount: 1
+      - type: INGREDIENT
+        item: FEATHER
+        state: NONE
+        temperature: WARM
+        amount: 2
+    effects:
+      vanilla_effects:
+        - type: SPEED
+          power: 2
+          duration: 1200
+        - type: JUMP_BOOST
+          power: 1
+          duration: 1200
+  fortitude_potion:
+    name: "Potion of Fortitude"
+    standard_temp: HOT
+    steps:
+      - type: INGREDIENT
+        item: IRON_NUGGET
+        state: CRUSHED
+        amount: 3
+      - type: ACTION
+        action: STIR_CLOCKWISE
+      - type: INGREDIENT
+        item: OBSIDIAN
+        state: POWDERED
+        amount: 1
+      - type: INGREDIENT
+        item: GOLDEN_APPLE
+        state: NONE
+        temperature: BOILING
+        amount: 1
+      - type: ACTION
+        action: STIR_COUNTERCLOCKWISE
+    effects:
+      vanilla_effects:
+        - type: RESISTANCE
+          power: 1
+          duration: 2400
+        - type: FIRE_RESISTANCE
+          power: 1
+          duration: 1200
+  clarity_potion:
+    name: "Potion of Clarity"
+    standard_temp: COLD
+    steps:
+      - type: INGREDIENT
+        item: LAPIS_LAZULI
+        state: POWDERED
+        amount: 2
+      - type: ACTION
+        action: STIR_CLOCKWISE
+      - type: INGREDIENT
+        item: ECHO_SHARD
+        state: NONE
+        amount: 1
+      - type: INGREDIENT
+        item: GLOWSTONE_DUST
+        state: NONE
+        temperature: WARM
+        amount: 2
+      - type: ACTION
+        action: STIR_CLOCKWISE
+    effects:
+       vanilla_effects:
+         - type: NIGHT_VISION
+           power: 1
+           duration: 3600
+         - type: GLOWING
+           power: 1
+           duration: 600
+  withering_tonic:
+    name: "Withering Tonic"
+    standard_temp: BOILING
+    steps:
+      - type: INGREDIENT
+        item: WITHER_ROSE
+        state: CRUSHED
+        amount: 2
+      - type: ACTION
+        action: STIR_COUNTERCLOCKWISE
+      - type: INGREDIENT
+        item: BONE_MEAL
+        state: POWDERED
+        amount: 3
+      - type: INGREDIENT
+        item: FERMENTED_SPIDER_EYE
+        state: NONE
+        temperature: HOT
+        amount: 1
+      - type: ACTION
+        action: STIR_COUNTERCLOCKWISE
+    effects:
+      vanilla_effects:
+        - type: WITHER
+          power: 1
+          duration: 800
+        - type: WEAKNESS
+          power: 1
+          duration: 1200
+  frost_draught:
+    name: "Frost Draught"
+    standard_temp: FROZEN
+    steps:
+      - type: INGREDIENT
+        item: BLUE_ICE
+        state: CRUSHED
+        amount: 2
+      - type: INGREDIENT
+        item: SNOWBALL
+        state: NONE
+        amount: 3
+      - type: ACTION
+        action: STIR_CLOCKWISE
+      - type: INGREDIENT
+        item: PRISMARINE_CRYSTALS
+        state: POWDERED
+        temperature: COLD
+        amount: 1
+    effects:
+      vanilla_effects:
+        - type: SLOWNESS
+          power: 2
+          duration: 1000
+        - type: MINING_FATIGUE
+          power: 1
+          duration: 800
